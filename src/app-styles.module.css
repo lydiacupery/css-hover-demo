@@ -1,0 +1,29 @@
+.outerComponent {
+	width: 700px;
+	height: 700px;
+	background-color: cadetblue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.component {
+	width: 500px;
+	height: 500px;
+	background-color: blueviolet;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.showMe {
+	background-color: yellow;
+	display: hidden;
+	padding: 30px;
+	visibility: hidden;
+
+}
+
+:global(.outerComponent:hover) .showMe {
+	visibility: visible;
+}
